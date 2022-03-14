@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/index.css">
+    <title>Document</title>
+    <!-- --------------------BOOTSTRAP----------- -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+</head>
+<!-- barra de navegacion -->
+
+<nav id= "background-nav" class="navbar navbar-expand-lg navbar-light  p-3 fixed-top">
+    <div class="container-fluid bg-white ms-lg-5 me-lg-5">
+      <a id= vaccination class="navbar-brand " href="#">Vaccination</a>
+    <!--------------------BOOTON PARA PANTALLAS MOVILES------------------------------>
+      <button class="navbar-toggler border" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    <!-------------------------------------------------------------------------------->
+      
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto" >
+          <li class="nav-item  ">
+            <a id="database" class="nav-link" href="#">Database</a>
+          </li>
+          <li class="nav-item ">
+            <a id="education" class="nav-link" href="#">Education</a>
+          </li>
+          <li class="nav-item">
+            <a id="news" class="nav-link"  href="#">News</a>
+          </li>
+          <li class="nav-item">
+            <a id="regulation" class="nav-link"  href="#">Regulation</a>
+          </li>
+          <button id="botton-hoax" type="button" class="btn btn-primary" data-bs-toggle="button" autocomplete="off">Hoax Buster</button>
+        </ul>   
+      </div>
+    </div>
+</nav>
+<body>
+<header>
+
+  <div class="container-fluid   justify-content-center align-items-center">    
+    <div class="row">
+      <div class="col-12 col-lg-6 ">
+        <div class="row">
+          <div id="fight-virus" class="col-12  ">
+            <h1>Fight Virus With Vaccines</h1>
+            <p>Let's stop this pandemic by killing the virus with a vaccine, don't let yourself and your family get infected</p>          
+          </div>
+          <!-- ICONOS DEL ENCABEZADO -->
+          <div class="col-12 m-3 d-flex justify-content-start">
+            <div class="div-shield"><span id= "shield-icon" class="badge  p-2 "><i class="bi bi-shield-fill-check"></i></span><span id="text-shield">Best protection</span></div>
+            <div class="div-star"><span id= "star-icon" class="badge p-2 "><i class="bi bi-star-fill"></i></span><span id="text-star">Selected vaccines</span></div>
+          </div>
+          <!-- SCHEDULE BOTON -->
+          <div  id="botonchido" class="col-12 d-flex ">
+            <!-- BARRA DE REGISTRO -->
+            <!-- BOTON RELOJ -->
+            <div id="boton-clock">
+              <a id="schedule-now" class="btn btn" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample"><i id = 'icon-clock' class="bi bi-clock-fill"></i></a>
+              <span id="text-star">Schedule your vaccinations</span> 
+            </div> 
+            <!-- Boton reloj - barra colapsada -->
+            <div class="collapse" id="collapseExample" >
+              <div id='schedule-card' class="card card-body">
+                <!-- BOTON DE LOCACION -->
+                <div class='schedule-buttons'>
+                  <button type="button" class="btn btn-danger " data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="bi bi-geo-alt"></i>
+                  </button>
+                  <label class="label m-2" for="">Location</label>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Colima</a></li>
+                    <li><a class="dropdown-item" href="#">Guadalajara</a></li>
+                    <li><a class="dropdown-item" href="#">Ameca</a></li>
+                  </ul>
+                </div>
+                <!-- BOTON FECHA--> 
+                <div class='schedule-buttons'>
+                  <button type="button" class="btn btn-danger " data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="bi bi-calendar-week-fill"></i>
+                  </button>
+                  <label class="label m-2" for="">Date</label>
+                  <ul class="dropdown-menu">
+                    <li><input type="date" value="2017-06-01"></li>
+                  </ul>
+                </div>
+                <!-- BOTON VACUNAS -->
+                <div class='schedule-buttons' >
+                  <button type="button" class="btn btn-danger " data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="bi bi-pencil-square"></i>
+                  </button>
+                  <label class="label m-2" for="">Vaccine type</label>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Modernar</a></li>
+                    <li><a class="dropdown-item" href="#">Pfizer</a></li>
+                    <li><a class="dropdown-item" href="#">SINOVAC</a></li>
+                    <li><a class="dropdown-item" href="#">Aztra Zeneca</a></li>
+                  </ul>
+                </div>
+                <!-- fin de los botoes cards -->
+              </div>
+            </div>
+          </div>         
+        </div>     
+      </div>     
+      <div class="col-12 col-lg-6 bg-white d-flex pe-0">
+        <img src="/images/pexels-klaus-nielsen-6303777.jpg" class="img-fluid" alt="...">
+      </div>
+    </div>
+  </div>
+</header>
+<main>
+  <!-- marcas de las vacunas -->
+  <div class="container-fluid bg-white farma ">
+    <div class="row">
+      <div id = 'aztra-img'class="col-12 col-lg-3 d-flex align-items-center justify-content-center">
+        <img src="/images/aztra.png" class="img-fluid p-3" alt="...">
+      </div>
+      <div id="sinovac-img" class="col-12 col-lg-3 d-flex align-items-center justify-content-center">
+        <img src="/images/Sinovac_logo 2.svg.png" class="img-fluid p-3" alt="...">
+      </div>
+      <div id="pfizer" class="col-12 col-lg-3 d-flex align-items-center justify-content-center">
+        <img src="/images/Pfizer_(2021).svg.png" class="img-fluid h-75 p-1" alt="...">
+      </div>
+      <div id="moderna-img" class="col-12 col-lg-3 d-flex align-items-center justify-content-center">
+        <img src="/images/moderna.png" class="img-fluid  " alt="...">
+      </div>
+    </div>
+  </div>
+  <!-- texto de porque la vacuna -->
+  <div class="conteiner d-flex">
+    <div class="row">
+      <div id="why-text" class="col-12 col-lg-6">
+        <h1>Why should i vaccine?</h1>
+        <p>In order to avoid any doubts getting the COVID-19 vaccine,identify the following 4 benefits of COVID-19 vaccination:</p>
+      </div>
+    </div>
+  </div>
+  <!-- CARTAS DE INFORMACION -->
+  <div class="container-fluid ">
+    <div class="row">
+    <!-- CARTA UNO -->
+      <div class="col-12 col-lg-3 bg-white d-flex align-items-center justify-content-center pt-5 pb-5">
+        <div id="card-conteiner-one" class="card rounded">
+          <div id="card-one"class="card-body ">
+            <span id="card-one-icon" class="badge  p-2 "><i class="bi bi-toggles"></i></span>
+            <h5 class="card-title mt-3">Minimize the spread of viruses</h5>
+            <p class="card-text">Vaccine has been proven offective to prevent someone form getting infected with coronavirus</p>
+            
+          </div>
+        </div>
+      </div>
+    <!-- CARTA DOS -->
+      <div class="col-12 col-lg-3 bg-white d-flex align-items-center justify-content-center pt-5 pb-5">
+        <div id="card-conteiner-one" class="card  rounded">
+          <div id="card-one" class="card-body ">
+            <span id="card-one-icon" class="badge  p-2 "><i class="bi bi-shield-fill-check"></i></span>
+            <h5 class="card-title mt-3">Forming antibodies</h5>
+            <p class="card-text">COVID-19 vaccine proven to help shape antibody response for a inmune system</p> 
+          </div>
+        </div>
+      </div>
+    <!-- CARTA TRES -->
+      <div class="col-12 col-lg-3 bg-white d-flex align-items-center justify-content-center pt-5 pb-5">
+        <div id="card-conteiner-one" class="card  rounded">
+          <div  id="card-one" class="card-body ">
+            <span  id="card-one-icon"  class="badge p-2 "><i class="bi bi-people-fill"></i></span>
+            <h5 class="card-title mt-3">Protecting people nearby</h5>
+            <p class="card-text">The benefits of COVID-19 vaccination are the vaccine that we get can also help protect people around us</p>     
+          </div>
+        </div>
+      </div>
+    <!-- CARTA CUATRO -->
+      <div class="col-12 col-lg-3 bg-white d-flex align-items-center justify-content-center pt-5 pb-5">
+        <div id="card-conteiner-one" class="card rounded" >
+          <div id="card-one" class="card-body ">
+            <span id="card-one-icon" class="badge p-2 "><i class="bi bi-graph-up-arrow"></i></span>
+            <h5 class="card-title mt-3">Creatging group inmunity</h5>
+            <p class="card-text">COVID-19 vaccination is also beneficial fir creating group inmunity ir herd immunity</p> 
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid mt-5">
+    <div class="row">
+      <div class="col-12 col-lg-6 bg-white pe-0 ">
+        <img src="/images/smiley-woman-showing-sticker-arm-after-getting-vaccine.jpg" class="img-fluid" alt="...">
+      </div>
+      <div class="col-12 col-lg-6 bg-white">
+        <section id = "preparations">
+          <h1>Preparations Before Vaccine</h1>
+        </section>
+        <section id="preparations-text">
+          <p>the success of vaccines is strongly influenced by the streng of the body's immune system. Therefore, there are several things that can be tried to make the COVID-19 vaccine work :</p>
+        </section>
+        <!-- PRIMER BARRA -->
+        <section class = "seccion-buttons">
+
+          <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-bar" aria-expanded="false" aria-controls="collapseExample">
+            <span id= "icon-bar" class="badge  p-2 "><i class="bi bi-shield-fill-check"></i></span> 
+            <span id= "icon-text-bar" >Avoid alcoholic beverage </span>
+            <span id= "icon-bar-small" class="badge  p-2 "><i class="bi bi-heart-fill"></i></span>
+          </button>
+          <!-- CONTENIDO COLAPSABLE -->
+          <div class="collapse " id="collapse-bar">
+            <div id="bar-text" class="card card-body ">
+              Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+            </div>
+          </div>
+        </section>
+        <!-- SEGUNDA BARRA -->
+        <section class = "seccion-buttons">
+
+          <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-bar-two" aria-expanded="false" aria-controls="collapseExample">
+            <span id= "icon-bar" class="badge  p-2 "><i class="bi bi-x-square-fill"></i></span> 
+            <span id= "icon-text-bar" >Avoid alcoholic beverage </span>
+            <span id= "icon-bar-small" class="badge  p-2 "><i class="bi bi-heart-fill"></i></span>
+          </button>
+          <!-- CONTENIDO COLAPSABLE -->
+          <div class="collapse " id="collapse-bar-two">
+            <div id="bar-text" class="card card-body ">
+              Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+            </div>
+          </div>
+        </section>
+        <!-- TERCERA BARRA -->
+         <section class = "seccion-buttons">
+
+          <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-bar-thre" aria-expanded="false" aria-controls="collapseExample">
+            <span id= "icon-bar" class="badge  p-2 "><i class="bi bi-bar-chart-fill"></i></span> 
+            <span id= "icon-text-bar" >Avoid alcoholic beverage </span>
+            <span id= "icon-bar-small" class="badge  p-2 "><i class="bi bi-heart-fill"></i></span>
+          </button>
+          <!-- CONTENIDO COLAPSABLE -->
+          <div class="collapse " id="collapse-bar-thre">
+            <div id="bar-text" class="card card-body ">
+              Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+            </div>
+          </div>
+        </section>
+        <!-- CUARTA BARRA -->
+        <section class = "seccion-buttons">
+
+          <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-bar-four" aria-expanded="false" aria-controls="collapseExample">
+            <span id= "icon-bar" class="badge  p-2 "><i class="bi bi-check-lg"></i></span> 
+            <span id= "icon-text-bar" >Avoid alcoholic beverage </span>
+            <span id= "icon-bar-small" class="badge  p-2 "><i class="bi bi-heart-fill"></i></span>
+          </button>
+          <!-- CONTENIDO COLAPSABLE -->
+          <div class="collapse " id="collapse-bar-four">
+            <div id="bar-text" class="card card-body ">
+              Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+            </div>
+          </div>
+        </section>
+        <!-- QUINTA BARRA -->
+        <section class = "seccion-buttons">
+
+          <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-bar-five" aria-expanded="false" aria-controls="collapse-bar-four">
+            <span id= "icon-bar" class="badge  p-2 "><i class="bi bi-heart-fill"></i></span> 
+            <span id= "icon-text-bar" >Avoid alcoholic beverage </span>
+            <span id= "icon-bar-small" class="badge  p-2 "><i class="bi bi-heart-fill"></i></span>
+          </button>
+          <!-- CONTENIDO COLAPSABLE -->
+          <div class="collapse " id="collapse-bar-five">
+            <div id="bar-text" class="card card-body ">
+              Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+            </div>
+          </div>
+        </section>
+        
+      </div>
+    </div>
+  </div>
+<!-- CONTACTO  -->
+<div class="conteiner d-flex mt-5">
+  <div class="row">
+    <div id="why-text" class="col-12 col-lg-6">
+      <h1>Emergency contact</h1>
+      <p>Contact one of the contacts below if you or your family fell unwell and have similar symptoms such as COVID-19, make sure you also take care of yourself before 
+        reporting to us:
+      </p>
+    </div>
+  </div>
+</div>
+  <div class="container-fluid">
+    <div class="row">
+      <div id= "cards-container"class="col-12 col-lg-6  mt-5 pe-0 me-0 ps-0 ms-0">
+
+        <div class="row">
+          <div id="container-two">
+            <!-- CARTA CALL -->
+            <div id="card-contact">
+              <div id="contact-icon">
+                <span id= "icon-bar" class="badge  p-2 "><i class="bi bi-telephone-outbound-fill"></i></span>
+                <div id="contact-info">
+                  <h5>Call</h5>
+                  <p>31202020202</p>
+                </div>
+              </div>
+                <div id="call-button">
+                  <button>Call now</button>
+                </div>
+            </div>
+             <!-- CARTA CHAT -->
+            <div id="card-contact">
+              <div id="contact-icon">
+                <span id= "icon-bar" class="badge  p-2 "><i class="bi bi-chat-dots-fill"></i></span>
+                <div id="contact-info">
+                  <h5>Chat</h5>
+                  <p>31202020202</p>
+                </div>
+              </div>
+                <div id="call-button">
+                  <button>Call now</button>
+                </div>
+            </div>
+          </div>
+          <div class="row">
+          <div id="container-two">
+            <!-- CARTA VIDEO CALL -->
+            <div id="card-contact">
+              <div id="contact-icon">
+                <span id= "icon-bar" class="badge  p-2 "><i class="bi bi-camera-video-fill"></i></span>
+                <div id="contact-info">
+                  <h5>Video Call</h5>
+                  <p>31202020202</p>
+                </div>
+              </div>
+                <div id="call-button">
+                  <button>Call now</button>
+                </div>
+            </div>
+            <!-- CARTA MESSAGE -->
+            <div id="card-contact">
+              <div id="contact-icon">
+                <span id= "icon-bar" class="badge  p-2 "><i class="bi bi-envelope-fill"></i></span>
+                <div id="contact-info">
+                  <h5>Message</h5>
+                  <p>31202020202</p>
+                </div>
+              </div>
+                <div id="call-button">
+                  <button>Call now</button>
+                </div>
+            </div>
+            
+              
+          </div>
+
+        </div>
+        </div>
+      </div>
+
+
+
+
+      <div class="col-12 col-lg-6 bg-white mt-5 pe-0">
+        <img src="/images/pexels-antoni-shkraba-6749777.jpg" class="img-fluid" alt="...">
+      </div>
+    </div>
+    </div>
+  </div>
+</main>
+<footer>
+  <div id="footer-container"class="conteiner-fluid">
+    <div class="row">
+      <div id= "vaccination-footer" class="col-12 col-lg-6 ">
+        <div id="goal-vision">
+          <h3>Vaccination</h3>
+          <p>Our goal is to help world free from the ongoing pandemic</p>
+        </div>
+      </div>
+      <div id="footer-info" class="col-12 col-lg-2 ">
+        <h4>About</h4>
+        <ul>
+          <li><a href="">About us</a></li>
+          <li><a href="">Freatures</a></li>
+          <li><a href="">News & Blog</a></li>
+        </ul>
+      </div>
+      <div id="footer-info" class="col-12 col-lg-2 ">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="">How We Work?</a></li>
+          <li><a href="">Capital</a></li>
+          <li><a href="">Security</a></li>
+        </ul>
+      </div>
+      <div id="footer-info" class="col-12 col-lg-2 ">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="">FAQs</a></li>
+          <li><a href="">Support Center</a></li>
+          <li><a href="">Contact Us</a></li>
+        </ul>
+      </div>
+
+    </div>
+    <div class="row">
+      <div id="copy-right" class="col-12 pe-0 me-0">
+
+        <p>@2021 Vaccination. All rights reserved</p>
+
+      </div>
+    </div>
+  </div>
+</footer>
+        
+      
+
+   
+                                <!-- JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
